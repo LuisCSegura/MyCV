@@ -63,6 +63,7 @@
     width: 150px;
     box-shadow: 0px 5px 20px rgb(182,182,182);
     border: none;
+    text-decoration: none;
 }
 .eliminar:hover{
     background: #d03;

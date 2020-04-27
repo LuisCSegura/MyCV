@@ -60,7 +60,7 @@
                         @csrf
                         @method('DELETE')
                         <div class="del-group mx-sm-4">
-                            <input type="submit" class="eliminar" name="eliminar" value=" ✖ ">
+                            <input type="submit" class="eliminar" name="eliminar" value=" X ">
                         </div>
                     </form>
                     @endforeach

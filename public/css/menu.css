@@ -35,7 +35,7 @@
   #sidebar-wrapper {
   
     min-height: 100vh;
-    max-width: 240px;
+    max-width: 210px;
     margin-left: -15rem;
     -webkit-transition: margin .25s ease-out;
     -moz-transition: margin .25s ease-out;
@@ -87,12 +87,12 @@
   }
   
   #sidebar-wrapper .list-group {
-    width: 240px;
+    width: 210px;
   }
   
   #page-content-wrapper {
     min-width: 100vw;
-    margin-left: 20px;
+    margin-left: 0px;
   
   }
   
