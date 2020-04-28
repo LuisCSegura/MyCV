@@ -1,4 +1,3 @@
-@extends('layouts.app')
 <!DOCTYPE html>
 <html>
 
@@ -10,29 +9,16 @@
 </head>
 
 <body>
-
-    @section('content')
-    <div class="bar-container">
-        <form method="POST" class="export-bar" action="{{route('download', $style)}}">
-            @csrf
-            <input type="submit" class="export-bar-button" value="Download as PDF">
-        </form>
-        <form method="POST" class="export-bar" action="{{route('send', $style)}}">
-            @csrf
-            <input type="submit" class="export-bar-button" id="send" value="Send to your email">
-        </form>
-    </div>
-
     <div class="content-section">
-        <link rel="stylesheet" href="{{ asset('css/'.$style.'.css') }}">
+        <link rel="stylesheet" href="{{ public_path('css/'.$style.'.css') }}" media="all" />
         <div id="doc2" class="yui-t7">
             <div id="inner">
                 @if (!empty($profile))
                 @foreach($profile as $profl)
                 @if ($profl->picture != '')
-                <img class="card-img-top" name='imagen' src="{{asset('images/'.$profl->picture)}}">
+                <img class="card-img-top" name='imagen' src="{{public_path('images/'.$profl->picture)}}">
                 @else
-                <img class="card-img-top" name='imagen' src="{{asset('images/userIcon.png')}}">
+                <img class="card-img-top" name='imagen' src="{{public_path('images/userIcon.png')}}">
                 @endif
                 <div id="hd">
                     <div class="yui-gc">
@@ -232,7 +218,6 @@
             </div><!-- // inner -->
         </div>
     </div>
-    @endsection
 </body>
 
 </html>

@@ -24,6 +24,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/download/{style}', 'PDFController@download')->name('download');
+Route::post('/send/{style}', 'PDFController@sendMail')->name('send');
 
 Route::resources([
     'profiles' => 'ProfileController',

@@ -30,6 +30,7 @@ body {}
 #doc2 {
     font-family: Georgia;
     color: #444;
+    page-break-inside: avoid;
 }
 
 #inner {
