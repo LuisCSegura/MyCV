@@ -23,6 +23,7 @@ Route::get('home', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/download/{style}', 'PDFController@download')->name('download');
 
 Route::resources([
     'profiles' => 'ProfileController',

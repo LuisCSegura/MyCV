@@ -16,9 +16,10 @@
 
 
     @section('content')
-    <form class="export-bar" action="">
+    <form method="POST" class="export-bar" action="{{route('download', $style)}}">
+        @csrf
         <input type="button" class="export-bar-button" onclick="CreatePDFfromHTML()" value="Download as PDF">
-        <input type="submit" class="export-bar-button" Value>
+        <input type="submit" class="export-bar-button" id="send" value="Send to your email">
     </form>
     <div class="content-section">
         <link rel="stylesheet" href="{{ asset('css/'.$style.'.css') }}">
@@ -26,7 +27,11 @@
             <div id="inner">
                 @if (!empty($profile))
                 @foreach($profile as $profl)
+                @if ($profl->picture != '')
                 <img class="card-img-top" name='imagen' src="{{asset('images/'.$profl->picture)}}">
+                @else
+                <img class="card-img-top" name='imagen' src="{{asset('images/userIcon.png')}}">
+                @endif
                 <div id="hd">
                     <div class="yui-gc">
                         <div class="yui-u first">

@@ -116,6 +116,29 @@ h5 {
     width: 100%;
     display: flex;
     background: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.export-bar-button {
+    margin: 0px 30px;
+    background: #00A067;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.export-bar-button:hover {
+    background: #009056;
+}
+
+#send {
+    background: #ffae00;
+}
+
+#send:hover {
+    background: #ee9d00;
 }
 
 @media (min-width: 768px) {
