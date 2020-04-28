@@ -71,15 +71,33 @@
                 <br>
                 <br>
                 <div class="list-group list-group-flush">
-                    <a href="{{route('home')}}" class="list-group-item"> ◉ CREATE</a>
-                    <a href="{{route('profiles.index')}}" class="list-group-item"> ◉ PROFILE</a>
-                    <a href="{{route('experiences.index')}}" class="list-group-item"> ◉ EXPERIENCE</a>
-                    <a href="{{route('educations.index')}}" class="list-group-item"> ◉ EDUCATION</a>
-                    <a href="{{route('skills.index')}}" class="list-group-item"> ◉ SKILLS</a>
-                    <a href="{{route('knowledges.index')}}" class="list-group-item"> ◉ KNOWLEDGE</a>
-                    <a href="{{route('projects.index')}}" class="list-group-item"> ◉ PROJECTS</a>
-                    <a href="{{route('hobbies.index')}}" class="list-group-item"> ◉ HOBBIES</a>
-                    <a href="{{route('contributions.index')}}" class="list-group-item"> ◉ CONTRIBUTIONS</a>
+                    <a href="{{route('home')}}" class="list-group-item">
+                        <font color="#ffae00"> ◉</font> CREATE
+                    </a>
+                    <a href="{{route('profiles.index')}}" class="list-group-item">
+                        <font color="#ffae00"> ◉</font> PROFILE
+                    </a>
+                    <a href="{{route('experiences.index')}}" class="list-group-item">
+                        <font color="#ffae00"> ◉</font> EXPERIENCE
+                    </a>
+                    <a href="{{route('educations.index')}}" class="list-group-item">
+                        <font color="#ffae00"> ◉</font> EDUCATION
+                    </a>
+                    <a href="{{route('skills.index')}}" class="list-group-item">
+                        <font color="#ffae00"> ◉</font> SKILLS
+                    </a>
+                    <a href="{{route('knowledges.index')}}" class="list-group-item">
+                        <font color="#ffae00"> ◉</font> KNOWLEDGE
+                    </a>
+                    <a href="{{route('projects.index')}}" class="list-group-item">
+                        <font color="#ffae00"> ◉</font> PROJECTS
+                    </a>
+                    <a href="{{route('hobbies.index')}}" class="list-group-item">
+                        <font color="#ffae00"> ◉</font> HOBBIES
+                    </a>
+                    <a href="{{route('contributions.index')}}" class="list-group-item">
+                        <font color="#ffae00"> ◉</font> CONTRIBUTIONS
+                    </a>
                 </div>
             </div>
             <div id="page-content-wrapper">

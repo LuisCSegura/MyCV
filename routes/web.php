@@ -33,4 +33,5 @@ Route::resources([
     'knowledges' => 'KnowledgeController',
     'projects' => 'ProjectController',
     'skills' => 'SkillController',
+    'templates' => 'TemplateController',
 ]);
