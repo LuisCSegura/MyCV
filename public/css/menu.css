@@ -3,37 +3,42 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
- body {
+
+body {
     overflow-x: hidden;
     background: #fff;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
-  
-  h1,h2{
+}
+
+h1,
+h2 {
     margin-top: 0px;
     color: #567;
-  }
-  h5{
+}
+
+h5 {
     color: #567;
     margin-bottom: 0px;
-  }
-  #separator{
+}
+
+#separator {
     margin-bottom: 20px;
     height: 3px;
     width: 98%;
-    background: #ffae00; 
-  }
-  #usrImg{
-    margin:20px;
+    background: #ffae00;
+}
+
+#usrImg {
+    margin: 20px;
     height: 100px;
     margin-bottom: 0px;
     width: 100px;
     border-radius: 50%;
     object-fit: cover;
-  }
-  #sidebar-wrapper {
-  
+}
+
+#sidebar-wrapper {
     min-height: 100vh;
     max-width: 210px;
     margin-left: -15rem;
@@ -45,73 +50,84 @@
     box-shadow: 2px 0px 20px #678;
     position: fixed;
     z-index: 1;
-  }
- .navbar{
+}
+
+.navbar {
     z-index: 2;
     box-shadow: none;
-  }
-  .list-group-item{
+}
+
+.list-group-item {
     text-align: left;
     letter-spacing: 2px;
     font-weight: normal;
     background: #222632;
     color: #fff;
     text-decoration: none;
-    border:none;
-  }
-  .list-group-item:hover{
+    border: none;
+}
+
+.list-group-item:hover {
     background: #303440;
     color: #ffae00;
     text-decoration: none;
-  }
-  .sidebar-heading{
+}
+
+.sidebar-heading {
     text-align: center;
     color: #fff;
-  }
-  #mail{
+}
+
+#mail {
     font-size: 14px;
     color: #ffB300;
-  }
-  #cerrar{
+}
+
+#cerrar {
     font-size: 16px;
-    color:#f07;
-  }
-  #cerrar:hover{
+    color: #f07;
+}
+
+#cerrar:hover {
     text-decoration: none;
-    color:#f0a;
-  }
-  #sidebar-wrapper .sidebar-heading {
+    color: #f0a;
+}
+
+#sidebar-wrapper .sidebar-heading {
     padding: 0.875rem 1.25rem;
     font-size: 30px;
     font-weight: bold;
-  }
-  
-  #sidebar-wrapper .list-group {
+}
+
+#sidebar-wrapper .list-group {
     width: 210px;
-  }
-  
-  #page-content-wrapper {
+}
+
+#page-content-wrapper {
     min-width: 100vw;
     margin-left: 0px;
-  
-  }
-  
-  #wrapper.toggled #sidebar-wrapper {
+}
+
+#wrapper.toggled #sidebar-wrapper {
     margin-left: 0;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+.export-bar {
+    width: 100%;
+    display: flex;
+    background: none;
+}
+
+@media (min-width: 768px) {
     #sidebar-wrapper {
-      margin-left: 0;
+        margin-left: 0;
     }
-  
     #page-content-wrapper {
-      margin-left: 260px;
-      min-width: 0;
-      width: 100%;
+        margin-left: 260px;
+        min-width: 0;
+        width: 100%;
     }
-  
     #wrapper.toggled #sidebar-wrapper {
-      margin-left: -15rem;
+        margin-left: -15rem;
     }
-  }
+}
