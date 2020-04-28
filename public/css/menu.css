@@ -112,6 +112,12 @@ h5 {
     margin-left: 0;
 }
 
+.bar-container {
+    display: flex;
+    text-align: center;
+    background: none;
+}
+
 .export-bar {
     width: 100%;
     display: flex;
