@@ -1,6 +1,6 @@
 .msg {
     padding: 10px;
-    background: #222;
+    background: red;
     position: relative;
 }
 
@@ -11,7 +11,7 @@
 .msg a {
     margin-left: 20px;
     background: #408814;
-    color: white;
+    color: green;
     padding: 4px 8px;
     text-decoration: none;
 }
@@ -25,27 +25,39 @@
 
 body {}
 
-.container {
-    border-color: #000;
-}
+.container {}
 
 #doc2 {
     font-family: Georgia;
-    color: #444;
+    color: #dfdfdf;
 }
 
 #inner {
     padding: 10px 80px;
     margin: 80px auto;
-    background-color: lavender;
-    border: solid  #555a5a ;
-    border-width: 20px 0 10px 0;
+    background-color: #312d2d;
+    font-family: cursive;
+    text-align: left;
+}
+
+.talent {
+    margin-left: 200px;
+}
+
+.yui-main {
+    text-align: justify;
 }
 
 .yui-gf {
     margin-bottom: 2em;
     padding-bottom: 2em;
-    border-bottom: 1px solid #696969
+    border-style: dotted;
+    border-bottom: 3px solid #ffffff;
+    border-style: dotted;
+}
+
+.contentsecction {
+    background-color: beige;
 }
 
 
@@ -54,12 +66,13 @@ body {}
 #hd {
     margin: 2.5em 0 3em 0;
     padding-bottom: 1.5em;
-    border-bottom: 1px solid #41e6e8;
+    justify-content: left;
+    text-align: left;
 }
 
 #hd h2 {
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 #bd,
@@ -71,9 +84,13 @@ body {}
 /* //-- footer -- */
 
 #ft {
-    padding: 1em 0 5em 0;
-    font-size: 92%;
-    border-top: 1px solid #b7f0f1;
+    min-height: 1000%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #222;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -86,31 +103,32 @@ body {}
 /* //-- core typography and style -- */
 
 #hd h1 {
-    font-size: 34px;
-    font-style: inherit;
+    font-size: 50px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    color: #ffffff;
 }
 
 h2 {
-    font-size: 152%
+    font-size: 20px;
+    font-style: bold;
 }
 
 h3,
 h4 {
-    font-size: 122%;
+    font-size: 100%;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    color: #333;
+    color: #c8ff00;
 }
 
 p {
     font-size: 100%;
-    line-height: 18px;
+    line-height: 16px;
     padding-right: 3em;
 }
 
@@ -128,11 +146,8 @@ strong {
 
 li {
     line-height: 24px;
-    border-bottom: 1px solid#6666;
 }
-.py-4{
-color: #266400;
-}
+
 p.enlarge {
     font-size: 144%;
     padding-right: 6.5em;
@@ -140,10 +155,12 @@ p.enlarge {
 }
 
 p.enlarge span {
-    color: #000
+    color: #dfdfdf;
 }
 
-
+.contact-info {
+    margin-top: 7px;
+}
 
 .first h2 {
     font-style: bold;
@@ -153,17 +170,11 @@ p.enlarge span {
     border-bottom: 0
 }
 
-.contact-info{
-    margin-top: -300px;
-    border-color: #666;
-}
-
 img {
-    width: 200%;
-	height: auto;
-	margin-top: 30px;
-	-webkit-border-radius: 70px;
-    border-radius: 120px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px, 50px, 30px;
+    margin-left: 35%;
 }
 
 
@@ -172,7 +183,7 @@ img {
 a#pdf {
     display: block;
     float: left;
-    background: #41e6e8;;
+    background: #666;
     color: white;
     padding: 6px 50px 6px 12px;
     margin-bottom: 6px;
@@ -187,7 +198,6 @@ a#pdf:hover {
     position: relative;
     margin-bottom: 1em;
     padding-bottom: 1em;
-    border-bottom: 1px solid #41e6e8;;
 }
 
 .job h4 {
@@ -248,12 +258,18 @@ a#pdf:hover {
 }
 
 .yui-gf div.first {
-    width: 12.3%;
+    width: 12%;
 }
 
 .card-img-top {
     width: 300px;
     height: 300px;
-    border-radius: 5%;
     object-fit: cover;
+    margin-top: 50px;
+}
+
+.yui-gf {
+    border-style: dotted;
+    border-width: 4px;
+    padding: 30px;
 }

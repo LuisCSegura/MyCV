@@ -7,6 +7,7 @@
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all">
+
 </head>
 
 <body>
@@ -43,10 +44,10 @@
 
                         <div class="yui-u">
                             <div class="contact-info">
-                                <h2>BIRTH DATE: {{$profl->date_birth}}</h2>
-                                <h2>PHONE NUMBER:{{$profl->phone}}</h2>
-                                <h2>SITIO WEB: {{$profl->website}}</h2>
-                                <h2>GIT ACCOUNT: {{$profl->github}}</h2>
+                                <h2>BIRTH DATE: <br> {{$profl->date_birth}}</h2>
+                                <h2>PHONE NUMBER:<br> {{$profl->phone}}</h2>
+                                <h2>SITIO WEB:<br> {{$profl->website}}</h2>
+                                <h2>GIT ACCOUNT:<br> {{$profl->github}}</h2>
 
                             </div>
                             <!--// .contact-info -->
@@ -65,7 +66,9 @@
                                     <h2>Description</h2>
                                 </div>
                                 <div class="yui-u">
-                                    <p>{{$profl->description}}</p>
+                                    <div class="talent">
+                                        <p>{{$profl->description}}</p>
+                                    </div>
                                 </div>
                             </div>
                             <!--// .yui-gf -->
@@ -94,7 +97,7 @@
                             @if (!empty($knowledges))
                             <div class="yui-gf">
                                 <div class="yui-u first">
-                                    <h2>Conocimientos</h2>
+                                    <h2>Knowledge</h2>
                                 </div>
                                 <div class="yui-u">
                                     <div class="talent">

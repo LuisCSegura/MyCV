@@ -26,45 +26,55 @@
 
 /* //-- yui-grids style overrides -- */
 
-body {
-    
-}
+body {}
 
 .container {}
 
 #doc2 {
     font-family: Georgia;
-    color:#000000;
+    color: #000000;
 }
 
 #inner {
     padding: 10px 80px;
     margin: 80px auto;
-    background:  #81f281;
-    border: solid #000000;
-    border-width: 8px 0 2px 0;
+    background: #eee;
+    border: solid #408814 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
 }
 
 .yui-gf {
     margin-bottom: 2em;
     padding-bottom: 2em;
-    border-bottom: 1px solid #000000;
+    border: none;
+    display: block;
 }
-.contentsecction{
+
+.talent {
+    width: 100%;
+}
+
+.yui-main {
+    text-align: right;
+}
+
+.contentsecction {
     background-color: beige;
 }
+
 
 /* //-- header, body, footer -- */
 
 #hd {
     margin: 2.5em 0 3em 0;
     padding-bottom: 1.5em;
-    border-bottom: 1px solid #000000;
 }
 
 #hd h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: black;
 }
 
 #bd,
@@ -76,13 +86,13 @@ body {
 /* //-- footer -- */
 
 #ft {
-    min-height: 1000%;  
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  color: #222;
-  font-size: 18px;
-  line-height: 26px;
-  padding-bottom: 50px;
+    min-height: 1000%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #222;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -101,7 +111,8 @@ body {
 }
 
 h2 {
-    font-size: 110%
+    font-size: 110%;
+    color: #28b928;
 }
 
 h3,
@@ -113,7 +124,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: #222;
+    color: #419641;
 }
 
 p {
@@ -136,7 +147,6 @@ strong {
 
 li {
     line-height: 24px;
-    border-bottom: 1px solid#000000;
 }
 
 p.enlarge {
@@ -162,14 +172,14 @@ p.enlarge span {
 }
 
 img {
-    float: right;
     padding: 10px;
     background: #fff;
     margin: 0 30px;
     transform: rotate(-4deg);
     box-shadow: 0 0 4px rgba(0, 0, 0, .3);
     width: 40%;
-    max-width: 300px
+    max-width: 300px;
+    margin-top: 50px;
 }
 
 
@@ -250,7 +260,8 @@ a#pdf:hover {
 /* --// override to force 1/8th width grids -- */
 
 .yui-gf .yui-u {
-    width: 80.2%;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .yui-gf div.first {
@@ -260,6 +271,5 @@ a#pdf:hover {
 .card-img-top {
     width: 300px;
     height: 300px;
-    border-radius: 3em / 5em;
     object-fit: cover;
 }

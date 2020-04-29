@@ -23,40 +23,50 @@
 
 /* //-- yui-grids style overrides -- */
 
-body {
-    
-}
+body {}
 
 .container {}
 
 #doc2 {
     font-family: Georgia;
-    color: #444;
+    color: #dfdfdf;
 }
 
 #inner {
     padding: 10px 80px;
     margin: 80px auto;
-    background-color: beige;
-    border: solid #666;
-    border-width: 8px 0 2px 0;
+    background-color: #1e1e28;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+}
+
+.talent {
+    margin-left: 200px;
+}
+
+.yui-main {
+    text-align: justify;
 }
 
 .yui-gf {
     margin-bottom: 2em;
     padding-bottom: 2em;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 3px solid #ff3c00;
 }
-.contentsecction{
+
+.contentsecction {
     background-color: beige;
 }
+
 
 /* //-- header, body, footer -- */
 
 #hd {
     margin: 2.5em 0 3em 0;
     padding-bottom: 1.5em;
-    border-bottom: 1px solid #ccc
+    border-bottom: 1px solid #ccc;
+    justify-content: left;
+    text-align: left;
 }
 
 #hd h2 {
@@ -73,13 +83,13 @@ body {
 /* //-- footer -- */
 
 #ft {
-    min-height: 1000%;  
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  color: #222;
-  font-size: 18px;
-  line-height: 26px;
-  padding-bottom: 50px;
+    min-height: 1000%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #222;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -92,14 +102,15 @@ body {
 /* //-- core typography and style -- */
 
 #hd h1 {
-    font-size: 30px;
+    font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #ff3c00;
 }
 
 h2 {
-    font-size: 100%;
-    font-style:bold;
+    font-size: 20px;
+    font-style: bold;
 }
 
 h3,
@@ -111,7 +122,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: #222;
+    color: #dfdfdf;
 }
 
 p {
@@ -134,7 +145,6 @@ strong {
 
 li {
     line-height: 24px;
-    border-bottom: 1px solid #ccc;
 }
 
 p.enlarge {
@@ -144,7 +154,7 @@ p.enlarge {
 }
 
 p.enlarge span {
-    color: #0004;
+    color: #dfdfdf;
 }
 
 .contact-info {
@@ -162,7 +172,7 @@ p.enlarge span {
 img {
     width: 200px;
     height: 200px;
-    border-radius: 15px, 50px,30px;
+    border-radius: 15px, 50px, 30px;
     margin-left: 35%;
 }
 
@@ -254,6 +264,6 @@ a#pdf:hover {
 .card-img-top {
     width: 300px;
     height: 300px;
-    border-radius: 3em / 5em;
     object-fit: cover;
+    margin-top: 50px;
 }

@@ -51,7 +51,9 @@
                                     <h2>Description</h2>
                                 </div>
                                 <div class="yui-u">
-                                    <p>{{$profl->description}}</p>
+                                    <div class="talent">
+                                        <p>{{$profl->description}}</p>
+                                    </div>
                                 </div>
                             </div>
                             <!--// .yui-gf -->
@@ -80,7 +82,7 @@
                             @if (!empty($knowledges))
                             <div class="yui-gf">
                                 <div class="yui-u first">
-                                    <h2>Conocimientos</h2>
+                                    <h2>Knowledge</h2>
                                 </div>
                                 <div class="yui-u">
                                     <div class="talent">
